@@ -7,3 +7,5 @@ This project uses Terraform to deploy an EC2 instance in AWS. It includes:
 - Automatically provisions EC2 instance on code push
 
 > Note: AWS credentials are stored in GitHub Secrets.
+# terraform-aws-ec2
+Deploys an EC2 instance using Terraform and GitHub Actions
