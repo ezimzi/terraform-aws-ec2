@@ -1,12 +1,21 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 provider "aws" {
-  region = var.aws_region
+  region = var.region
 }
 
 resource "aws_instance" "example" {
-  ami           = var.ami_id
+  ami           = var.ami
   instance_type = var.instance_type
 
   tags = {
-    Name = "TerraformEC2"
+    Name = "Terraform-EC2"
   }
 }
